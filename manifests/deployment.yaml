@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-url
+spec:
+  selector:
+    matchLabels:
+      app: go-url
+  template:
+    metadata:
+      labels:
+        app: go-url
+    spec:
+      containers:
+        - name: go-url
+          image: ogundepoelizabeth/go-url:1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
