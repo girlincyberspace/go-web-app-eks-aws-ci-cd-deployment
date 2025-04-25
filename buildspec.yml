@@ -32,5 +32,5 @@ phases:
     commands:
       - echo "Docker Image is Pushed"
       - echo "Deploying the application to EKS"
-      - kubectl set image deployment/go-url go-urlapp=$DOCKER_REGISTRY_USERNAME/go-url:$CODEBUILD_RESOLVED_SOURCE_VERSION
+      - kubectl set image deployment/go-url go-url=$DOCKER_REGISTRY_USERNAME/go-url:$CODEBUILD_RESOLVED_SOURCE_VERSION
       - kubectl get svc
