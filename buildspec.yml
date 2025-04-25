@@ -3,9 +3,9 @@ run-as: root
 
 env: 
   parameter-store:
-    DOCKER_REGISTRY_USERNAME: /golang-app/docker-credentials/username
-    DOCKER_REGISTRY_PASSWORD: /golang-app/docker-credentials/password
-    DOCKER_REGISTRY_URL: /golang-app/docker-credentials/url
+    DOCKER_REGISTRY_USERNAME: /go-url-shortener/docker-credentials/username
+    DOCKER_REGISTRY_PASSWORD: /go-url-shortener/docker-credentials/password
+    DOCKER_REGISTRY_URL: /go-url-shortener/docker-credentials/url
 
 phases:
   install: 
